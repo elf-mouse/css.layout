@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>输入框的布局</title>
+  <style>
+  body {
+    margin: 0;
+  }
+
+  .InputAddOn {
+    display: flex;
+  }
+
+  .InputAddOn-field {
+    flex: 1;
+  }
+  </style>
+</head>
+
+<body>
+  <p>我们常常需要在输入框的前方添加提示，后方添加按钮。</p>
+  <div class="InputAddOn">
+    <span class="InputAddOn-item">Label</span>
+    <input class="InputAddOn-field">
+    <button class="InputAddOn-item">Button</button>
+  </div>
+</body>
+
+</html>

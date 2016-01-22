@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>悬挂式布局</title>
+  <style>
+  body {
+    margin: 0;
+  }
+
+  img {
+    width: 44px;
+    height: 44px;
+    border: 1px solid;
+  }
+
+  .Media {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .Media-figure {
+    margin-right: 1em;
+  }
+
+  .Media-body {
+    flex: 1;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="Media">
+    <img class="Media-figure" src="" alt="">
+    <p class="Media-body">有时，主栏的左侧或右侧，需要添加一个图片栏。</p>
+  </div>
+</body>
+
+</html>
