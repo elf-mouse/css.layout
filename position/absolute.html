@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="style.css">
+<style>
+.relative {
+  position: relative;
+  width: 600px;
+  height: 400px;
+}
+
+.absolute {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  width: 300px;
+  height: 200px;
+}
+</style>
+<div class="relative elem">这个元素是相对定位的。如果它是 `position: static;` ，那么它的绝对定位子元素会跳过它直接相对于body元素定位。
+  <div class="absolute elem elem-red">这个元素是绝对定位的。它相对于它的父元素定位。</div>
+</div>
