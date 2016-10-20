@@ -14,21 +14,46 @@
  *     </div>
  *   </div>
  * </div>
+ *
+ * @requirement CSS reset:
+ * html {
+ *   box-sizing: border-box;
+ * }
+ *
+ * *, *:before, *:after {
+ *   box-sizing: inherit;
+ * }
  */
 
-$grid-gap: 10px;
+$grid-gap: 0;
 
-/* parent */
-.grid {
+@mixin center-block() {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin clearfix() {
+  &:before,
   &:after {
+    content: " ";
     display: table;
+  }
+  &:after {
     clear: both;
-    content: '';
   }
 }
 
+/* parent */
+
+.grid {
+  display: block;
+  @include clearfix;
+}
+
+
 /* children */
+
 .grid-box {
   float: left;
   //width: inherit;
@@ -39,9 +64,8 @@ $grid-gap: 10px;
 }
 
 .grid-box--center {
-  display: block;
   float: none;
-  margin: 0 auto;
+  @include center-block;
 }
 
 .grid-box--1of1 {
@@ -159,7 +183,9 @@ $grid-gap: 10px;
   width: 91.666%;
 }
 
+
 /* gap (for IE8+) */
+
 .grid-gap {
   margin-right: -$grid-gap;
   margin-left: -$grid-gap;
