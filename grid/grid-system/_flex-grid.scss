@@ -1,0 +1,72 @@
+/// unfinished
+///
+/// @usage HTML:
+/// <div class="flex-grid">
+///   <div class="flex-grid-box flex-grid-box--1of6">1of6</div>
+///   <div class="flex-grid-box flex-grid-box--5of6">5of6</div>
+/// </div>
+
+.flex-grid {
+  display: flex;
+  margin-left: -1.25em;
+  flex-wrap: wrap;
+}
+
+.flex-grid-box {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 1.25em;
+}
+
+.flex-grid--center {
+  justify-content: center;
+}
+
+.flex-grid--f {
+  margin-left: 0;
+}
+
+.flex-grid--f > .flex-grid-box {
+  padding-left: 0;
+}
+
+.flex-grid--s {
+  margin-left: -.625em;
+}
+
+.flex-grid--s > .flex-grid-box {
+  padding-left: .625em;
+}
+
+.flex-grid--l {
+  margin-left: -2.5em;
+}
+
+.flex-grid--l > .flex-grid-box {
+  padding-left: 2.5em;
+}
+
+.flex-grid-box--1of6 {
+  width: 16.66667%;
+}
+
+.flex-grid-box--2of6 {
+  width: 33.33333%;
+}
+
+.flex-grid-box--3of6 {
+  width: 50%;
+}
+
+.flex-grid-box--4of6 {
+  width: 66.66667%;
+}
+
+.flex-grid-box--5of6 {
+  width: 83.33333%;
+}
+
+.flex-grid-box--6of6 {
+  width: 100%;
+}
