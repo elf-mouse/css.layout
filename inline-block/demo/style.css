@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none outside none;
+  padding: 10px;
+  background: green;
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  background: orange;
+  padding: 5px;
+}
